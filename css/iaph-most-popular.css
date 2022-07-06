@@ -1,0 +1,76 @@
+
+.iaph-2 .iaph-card-information-image-container{
+    height: 10rem;
+}
+
+.iaph-2 .iaph-card-container{
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border:3px solid #f6f7f9;
+    background-color: #ffffff;
+        } 
+    
+    .iaph-2 .iaph-card-information-image{
+    border-radius: 5px;
+        }
+    
+    .iaph-2 .iaph-card-information-title{
+    font-size: 17px;
+    margin-top: 10px;
+    min-height: 60px;
+        }
+    
+    .iaph-2 .iaph-card-information-line{
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 5px;
+        }
+
+    .iaph-2 .iaph-card-information-description{
+    padding:5px 0 10px ;
+            }
+    
+    .iaph-2 .iaph-card-information-date{
+    color:#4F5964;
+    font-size: 13px;
+        }
+        
+
+        .iaph-most-popular-container{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }  
+    
+        .iaph-most-popular-link{
+            font-size:24px;
+            font-weight:bold;
+            color:var(--iaph-color-ocean-blue);
+            -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+    
+        .iaph-most-popular-line{
+            border-radius: 5px;
+            background: var(--iaph-color-energy-red);
+            height: 4px;
+            margin: 0.7rem 0 0.938rem;
+        }     
+        
+        .iaph-most-popular-container .iaph-button-hover{
+            font-size: 20px;
+        }
+        
+        
+        
+        
+        
+        

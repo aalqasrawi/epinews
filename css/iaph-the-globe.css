@@ -1,0 +1,96 @@
+.iaph-4 .iaph-card-container {
+border: 3px solid #f6f7f9;
+background-color: #ffffff;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+    }
+
+
+.iaph-4 .iaph-card-image-container{
+padding: 20px;
+height: 13rem;
+    }
+
+.iaph-4 .iaph-card-image-container img{
+border-radius: 5px;
+box-shadow: rgb(128 19 19 / 10%) 0 0 2.5rem;
+    }
+
+.iaph-4 .iaph-card-information-items-container {
+padding: 0 30px;
+margin: 10px 0;
+    }
+
+.iaph-4 .iaph-card-information-items-container li{
+list-style: disc;
+font-size: 14px;
+    }
+
+.iaph-4 .iaph-card-information-title{
+padding: 0 15px;
+margin: 10px 0;
+font-weight: 600;
+min-height: 60px;
+font-size: 17px;
+    }
+
+.iaph-4 .iaph-card-information-line {
+border-top: 2px solid #f6f7f9;
+width: 100%;
+    }
+
+
+.iaph-4 .iaph-card-information-values-container{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+margin:20px 0;
+    }
+
+.iaph-4 .iaph-card-information-values-container div{
+font-size: 20px;
+}
+
+
+.iaph-4 .iaph-color-grey{
+
+    font-size: 13px;
+
+}
+
+
+.iaph-the-globe-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}  
+
+.iaph-the-globe-link{
+    font-size:24px;
+    font-weight:bold;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.iaph-the-globe-line{
+    border-radius: 5px;
+    background: var(--iaph-color-energy-red);
+    height: 4px;
+    margin: 0.7rem 0 0.938rem;
+}     
+
+.iaph-the-globe-container .iaph-button-hover{
+    font-size: 20px;
+}

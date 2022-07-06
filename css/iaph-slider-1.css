@@ -1,0 +1,132 @@
+.iaph-slider-inner-1-1 .iaph-card-image-container{
+    position: relative;
+}
+
+.iaph-slider-inner-1-1 .iaph-card-image-over-lay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    opacity: 0.6;
+    transition: all 0.5s ease-in;
+}
+
+
+
+
+.iaph-slider-inner-1-1 .iaph-card-information{
+    position: absolute;
+    bottom: 10px;
+    padding: 15px;
+    color: white;
+    z-index: 99;
+}
+
+.iaph-slider-inner-1-1 .iaph-card-box-container{
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    z-index: 99;
+    min-width: 100px;
+    bottom: 13px;
+    right: 17px;
+}
+
+.iaph-slider-inner-1-1 .iaph-card-information-sub-title{
+    font-weight: 600;
+}
+
+.iaph-slider-inner-1-1 .iaph-card-information-date{
+    font-size: 13px;
+}
+
+.iaph-slider-inner-1-1 .owl-prev{
+    position: absolute;
+    top: 40%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px !important;
+    color: white !important;
+}
+
+
+.iaph-slider-inner-1-1 .owl-prev:hover{
+    background: transparent !important;
+    color: var(--iaph-color-second) !important;
+}
+
+
+.iaph-slider-inner-1-1 .owl-next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px !important;
+    color: white !important;
+}
+
+
+.iaph-slider-inner-1-1 .owl-next:hover{
+    background: transparent !important;
+    color: var(--iaph-color-second) !important;
+}
+
+.iaph-1 .iaph-card-information-container{
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    color: white;
+    
+}
+
+.iaph-1 .iaph-card-information-container .iaph-flex{
+    justify-content: space-between;
+}
+
+.iaph-1 .iaph-card-information-title{
+    min-height: 50px;
+}
+
+.iaph-1 .iaph-card-information-sub-title {
+    font-weight: 600;
+}
+
+
+.iaph-1 .iaph-card-information-date {
+    font-size: 13px;
+}
+
+.iaph-1 .iaph-card-over-lay{position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+}
+
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+
+    .iaph-slider-1 .iaph-layout-50 {
+        grid-column: 1 /2 span;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .iaph-slider-1 .iaph-adjustment{
+        padding: 0!important;
+    }
+
+
+}

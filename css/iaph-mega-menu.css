@@ -1,0 +1,316 @@
+/*Mega Menu*/
+
+.iaph-mega-menu{ margin: inherit;}
+
+
+.iaph-mega-menu-button{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+cursor: pointer;
+position: relative;
+font-size: 18px;
+    }
+
+.iaph-mega-menu-button i {
+    font-size: 14px;
+    margin: 0 5px;
+    }
+
+.iaph-mega-menu-button.active{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+    
+
+.iaph-mega-menu-button *{
+pointer-events: none;
+    }  
+
+
+.iaph-mega-menu-menu{
+background: var(--iaph-color-white);
+text-align: start;
+
+    }
+
+.iaph-countries{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.iaph-countries div{
+    width: 212px !important;
+    padding: 10px;
+}
+
+.iaph-countries div a{
+    display: inline-block;
+    padding: 7px 0 7px 10px;
+}
+
+.iaph-countries .iaph-countries-all{
+    font-weight: 700;
+    color: red;
+}
+
+
+.iaph-country a::first-letter {
+    border-bottom: 2px solid var(--iaph-color-main);
+    font-weight: 600;
+    }
+
+
+.iaph-mega-menu-menu li{
+    padding: 10px;
+    
+}
+
+.iaph-mega-menu-menu li:hover{
+    opacity: 0.7;
+}
+
+
+.iaph-mega-menu-menu li.active{
+    opacity: 0.7;
+    color: #004bb4;
+}
+
+
+.iaph-mega-menu-menu li:last-child{
+    border-bottom: 0;
+}
+
+.iaph-mega-menu-menu a{
+    
+    font-size: 16px !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    .iaph-mega-menu-button {
+
+        margin: 0 15px;
+    }
+    .iaph-mega-menu-menu-container {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+    }
+    
+    .iaph-mega-menu{
+        margin-top: 20px;
+    }
+    
+    .iaph-mega-menu-menu-container li{
+        margin-top: 0;
+    }
+
+
+    .iaph-drop-down-menu a{
+        width: 100% !important;
+    }
+    
+    /*Search*/
+    
+    
+    /*Dropdown*/
+    .iaph-drop-down-button {
+        
+        margin: 0 15px;
+    }
+    .iaph-drop-down-menu-container {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+    }
+    
+    .iaph-drop-down{
+        margin-top: 20px;
+    }
+    
+    .iaph-drop-down-menu-container li{
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) { 
+    .iaph-mega-menu-menu-container {
+        opacity: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        margin-top: 20px;
+        overflow: hidden;
+        box-shadow: var(--iaph-box-shadow);
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+        -webkit-transition: opacity 150ms ease-in-out ,-webkit-transform 150ms ease-in-out;
+        transition: opacity 150ms ease-in-out ,-webkit-transform 150ms ease-in-out;
+        -o-transition: opacity 150ms ease-in-out ,transform 150ms ease-in-out;
+        transition: opacity 150ms ease-in-out ,transform 150ms ease-in-out;
+        transition: opacity 150ms ease-in-out ,transform 150ms ease-in-out ,-webkit-transform 150ms ease-in-out;
+        }
+    
+        .iaph-drop-down-menu-container {
+            margin-top: 20px;
+            box-shadow: var(--iaph-box-shadow);
+            background: white;
+            z-index: 9999;
+            opacity: 0;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            -webkit-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                    transform: translateY(-10px);
+            -webkit-transition: opacity 150ms ease-in-out ,-webkit-transform 150ms ease-in-out;
+            transition: opacity 150ms ease-in-out ,-webkit-transform 150ms ease-in-out;
+            -o-transition: opacity 150ms ease-in-out ,transform 150ms ease-in-out;
+            transition: opacity 150ms ease-in-out ,transform 150ms ease-in-out;
+            transition: opacity 150ms ease-in-out ,transform 150ms ease-in-out ,-webkit-transform 150ms ease-in-out;
+            }
+        
+                
+        
+        .iaph-drop-down-menu a:hover::before{
+            left: -100% !important;
+        }
+    
+    .iaph-mega-menu-menu a:hover::before{
+        left: -100% !important;
+    }
+}
+/*Mega Menu */
+
+
+
+/* search outer */
+.iaph-nav-bar-search-outer-container{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+        align-items: center;
+position: relative;
+margin-inline-start:165px;
+}
+
+.iaph-nav-bar-search-outer-container input{
+width: 350px;
+padding: 0 5px;
+height: 30px;
+border: 0;
+caret-color: var(--iaph-color-elegance-grey);
+box-shadow: var(--iaph-box-shadow);
+}
+
+
+.iaph-nav-bar-search-outer-container input:focus{
+border: 0;
+outline: 0;
+}
+
+.iaph-nav-bar-search-outer-container button{
+padding: 2px;
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+
+.iaph-nav-bar-search-outer-container{
+    margin-inline-start:6px;  
+}
+
+.iaph-nav-bar-search-outer-container input{
+    width: 300px;
+}
+}
+
+/* search outer */
+
+
+
+.iaph-drop-down{
+position: relative;
+    }
+
+
+.iaph-drop-down-button{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+cursor: pointer;
+position: relative;
+font-size: 18px;
+    }
+
+.iaph-drop-down-button i {
+    font-size: 14px;
+    margin: 0 5px;
+    }
+
+.iaph-drop-down-button.active{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+    
+
+.iaph-drop-down-button *{
+pointer-events: none;
+    }  
+
+
+.iaph-drop-down-menu{
+
+text-align: start;
+    }
+
+
+.iaph-drop-down-menu li{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.iaph-drop-down-menu li:hover{
+    opacity: 0.7;
+}
+
+
+.iaph-drop-down-menu li.active{
+    opacity: 0.7;
+    color: #004bb4;
+}
+
+
+.iaph-drop-down-menu li:last-child{
+    border-bottom: 0;
+}
+
+.iaph-drop-down-menu a{
+    width: 250px !important;
+    font-size: 16px !important;
+}

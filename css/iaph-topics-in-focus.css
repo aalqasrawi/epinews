@@ -1,0 +1,87 @@
+.iaph-5 .iaph-card-container{
+border: 3px solid #f6f7f9;
+background-color: #ffffff;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+position: relative;
+    }
+
+    .iaph-5 .iaph-card-image{
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+    }
+
+    .iaph-5 .iaph-card-image-title{
+top: 10px;
+background: rgba(0,0,0,0.7);
+padding: 10px;
+min-width: 75px;
+position: absolute;
+color:#ffffff;
+font-size: 12px;
+    }
+
+    .iaph-5 .iaph-card-information-container{
+padding: 10px 10px 0 10px;
+    }
+    
+    .iaph-5 .iaph-card-information-title{
+        min-height: 70px;
+        font-size: 17px;
+    }
+
+    .iaph-5 .iaph-card-information-date{
+font-size:12.4px;
+color:#4F5964;
+margin-bottom:7px;
+    }
+
+    .iaph-5 .iaph-card-items-container{
+margin: 10px;
+font-size: 14px;
+line-height: 2;
+    }
+    .iaph-5 .iaph-card-button-container {
+        padding: 10px;
+    }
+
+    .iaph-5 .iaph-card-button-container a{
+    width: 100%;
+}
+
+
+.iaph-topics-in-focus-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}  
+
+.iaph-topics-in-focus-link{
+    font-size:24px;
+    color:var(--iaph-color-ocean-blue);
+    font-weight:bold;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.iaph-topics-in-focus-line{
+    border-radius: 5px;
+    background: var(--iaph-color-energy-red);
+    height: 4px;
+    margin: 0.7rem 0 0.938rem;
+}     
+
+.iaph-topics-in-focus-container .iaph-button-hover{
+    font-size: 20px;
+}
+
+.iaph-slider-1 .iaph-iaph-adjustment{
+    padding: 0!important;
+}

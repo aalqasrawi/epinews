@@ -1,0 +1,23 @@
+/*  Start iaph-upper-bar with px and without variables */
+
+.iaph-nav-bar-upper-bar-container {
+border-bottom: 3px solid #e8e8e826;;
+padding: 5px;
+}
+
+.iaph-nav-bar-upper-bar{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+}
+
+.iaph-nav-bar-upper-bar-text{
+    font-family: system-ui;
+}
+
+
+
+/*  End iaph-upper-bar with px and without variables */

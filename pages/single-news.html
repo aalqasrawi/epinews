@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--IE Compatibility Meta-->
+    <meta http-equiv="X-UA-Compatible" content"IE=edge">
+    <title>Epinews</title>
+
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/iaph.css">
+    <link rel="stylesheet" href="../css/iaph-upper-bar.css">
+    <link rel="stylesheet" href="../css/iaph-logo.css">
+    <link rel="stylesheet" href="../css/iaph-nav-bar.css">
+    <link rel="stylesheet" href="../css/iaph-mega-menu.css">
+    <link rel="stylesheet" href="../css/iaph-news-slider.css">
+    <link rel="stylesheet" href="../css/iaph-slider-1.css">
+    <link rel="stylesheet" href="../css/iaph-most-popular.css">
+    <link rel="stylesheet" href="../css/iaph-eastern-mediterranean.css">
+    <link rel="stylesheet" href="../css/iaph-the-globe.css">
+    <link rel="stylesheet" href="../css/iaph-topics-in-focus.css">
+    <link rel="stylesheet" href="../css/iaph-footer.css">
+    <link rel="stylesheet" href="../css/iaph-bread-crumb.css">
+    <link rel="stylesheet" href="../css/iaph-pagination.css">
+    <link rel="stylesheet" href="../css/iaph-all-cards.css">
+    <link rel="stylesheet" href="../css/iaph-paragraph.css">
+    <link rel="stylesheet" href="../css/epinews.css">
+
+    <script src="https://kit.fontawesome.com/7572ddbf67.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+
+<style>
+    .iaph-paragraph-information-category-cotnainer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 20px;
+        font-size: 13px;
+        margin-top: 13px;
+    }
+
+    .iaph-color-second{
+        color:#d4001b;
+    }
+
+    .iaph-paragraph-information-button-container a{
+        width: 200px;
+    }
+
+    .iaph-side-bar-single-news-share-post-container, .iaph-side-bar-single-news-related-post-container{
+        box-shadow: rgb(0 0 0 / 10%) 0 0 40px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .iaph-side-bar-single-news-share-news-social-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .iaph-copy-link{
+        background: #444;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+    .iaph-facebook{
+        background: #3b5998!important;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ffffff
+    }
+
+    .iaph-twitter{
+        background: #55acee;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ffffff
+    }
+    .iaph-linkedin{
+        background: #007bb5;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ffffff
+    }
+    .iaph-whatsapp{
+        background: #3ebe2b;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ffffff
+    }
+
+
+    .iaph-telegram{
+        background: #229ED9;
+        padding: 20px;
+        border-radius: 5px;
+        color: #ffffff
+    }
+
+
+    .iaph-side-bar-single-news-related-post-single-post-title{
+        font-size: 14px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .iaph-side-bar-single-news-related-post-single-post-category{
+        font-size: 13px;
+        margin: 5px 0 7px;
+    }
+
+    .iaph-side-bar-single-news-related-post-single-post-date-container{
+        font-size: 12px;
+    }
+
+    .iaph-side-bar-single-news-related-post-single-post-line{
+        width: 20px;
+        height: 2px;
+        background: #d4001b;
+        margin: 10px 0px;
+    }
+
+    .iaph-paragraph-information-tag{
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        border: 1px solid var(--iaph-color-elegance-grey);
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        transition: 0.5s all;
+        margin-bottom: 7px;
+        color: var(--iaph-color-black);
+    }
+
+    .iaph-paragraph-information-tag:hover{
+        background: var(--iaph-color-main);
+        color:var(--iaph-color-white)
+    }
+
+
+   .iaph-next-prev-article .iaph-card-container{
+    border: 1px solid var(--iaph-color-elegance-grey);
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+        }
+
+        .iaph-next-prev-article .iaph-card-container a{
+        display: contents;
+    }
+
+    .iaph-next-prev-article .iaph-card-container:hover .iaph-card-information-title{
+    color:var(--iaph-color-blue-sky);
+}
+
+.iaph-next-prev-article .iaph-card-image-container{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+align-items: center;
+gap: 25px;
+position: relative;
+padding: 10px 20px;
+font-size: 14px;
+color:var(--iaph-color-grey)
+    }
+
+.iaph-next-prev-article .iaph-card-image{
+border-radius:10px;
+width: 150px;
+}
+
+
+.iaph-next-prev-article .iaph-card-information-container{
+-webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+padding:20px;
+}
+
+.iaph-next-prev-article .iaph-card-information-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    min-height: 15px;
+}
+
+.iaph-next-prev-article .iaph-card-information-description{
+font-size: 14px;
+color: var(--iaph-color-grey);
+}
+        
+    
+
+
+@media (max-width:992px){
+    .iaph-next-prev-article .iaph-card-container{
+        grid-column: 1 /2 span;
+    }
+}
+
+@media (min-width:768px) and (max-width:1350px) {
+    .iaph-next-prev-article .iaph-card-information-container{ padding-bottom: 0;}
+    .iaph-next-prev-article .iaph-card-information-title { font-size: 16px;}
+
+}
+@media (min-width:1200px) and (max-width:1350px) {
+    .iaph-next-prev-article .iaph-card-information-container{padding-bottom: 0;}
+}
+
+@media (max-width: 992px) { 
+    .iaph-next-prev-article .iaph-card-container{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } 
+}
+
+
+@media (max-width: 992px) { 
+    .iaph-side-bar-single-news-share-news-social-container{
+        gap: 5px;
+    }
+
+    
+}
+</style>
+<!--Epinews Design-->
+<body>
+
+
+<!-- Start iaph Upper Bar-->
+<section class="iaph-nav-bar-upper-bar-container">
+
+
+    <div class="iaph-container">
+    <div class="iaph-nav-bar-upper-bar">
+
+    <span class="iaph-button-hover iaph-cursor-pointer iaph-nav-bar-upper-bar-text">العربية</span>
+
+
+    </div><!--End iaph-nav-bar-upper-bar-->
+    </div><!--End iaph-container-->
+
+
+</section><!--End iaph-nav-bar-upper-bar-container-->
+<!-- End iaph Upper Bar -->
+
+<!-- Start iaph Logo -->
+<section class="iaph-logo-container iaph-display-none-tablet">
+
+    <div class="iaph-container">
+        <div class="iaph-logo">
+            <a href="javascript:void(null)">
+                <img src="../../version-1/images/epinews-logo.svg" />
+            </a>
+        </div>
+    </div><!--End iaph-container-->
+
+</section>
+<!-- End iaph Logo-->
+
+
+
+<!-- Start iaph Nav bar-->
+<section class="iaph-header iaph-margin-top-10" >
+
+    <nav class="iaph-nav-bar">
+
+        <div class="iaph-container">
+
+                <div class="iaph-nav-bar-information-container iaph-position-relative">
+
+                    <div class="iaph-nav-bar-information-logo">
+
+                        <a href="javascript:void(null)">
+                            <img src="https://epinews.emphnet.net/assets/img/EPI%20News-02.svg" style="width: 200px;" />
+                        </a>
+
+                    </div> <!--End iaph-nav-bar-information-logo-->
+
+                    <ul class="iaph-nav-bar-information-links ">
+
+                        <!-- Mobile-->
+                        
+                        
+
+                        <ul class="iaph-nav-bar-information-links-mobile iaph-text-align-center">
+                            <li><a href="javascript:void(null)"><img src="https://epinews.emphnet.net/assets/img/EPI%20News-02.svg" style="width: 200px; margin: auto;"/></a></li>
+                            <li class="iaph-text-align-center">Epinews</li>
+                            <li class="iaph-nav-bar-information-links-mobile-line"></li>
+                        </ul><!--iaph-nav-bar-information-links-mobile-->
+
+
+                        <!-- Mobile-->
+
+
+                        <!--Desktop and Mobile-->
+                        <li><a href="javascript:void(null)"> Home</a></li>
+
+
+                        <li class="iaph-mega-menu">
+
+                            <a   class="iaph-mega-menu-button"> Eastern Mediterranean <i class="fas fa-arrow-down"></i> </a>
+                    
+                            
+                                <div class='iaph-mega-menu-menu-container'>
+                    
+                                    <div class="iaph-mega-menu-menu iaph-countries">
+
+                                        <div><a class="iaph-countries-all" href="javascript:void(null)" >View All</a></div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Afghanistan</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Algeria</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Bahrain </a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Bangladesh</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Egypt</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Iran</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Iraq</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Jordan</a>
+                                            </div>
+
+                                            <div class="iaph-country"> 
+                                                <a href="javascript:void(null)">KSA</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Kuwait</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Lebanon</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Libya</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Morocco</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Jordan</a>
+                                            </div>
+
+                                            
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Oman</a>
+                                            </div>
+
+                                            
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Pakistan</a>
+                                            </div>
+
+                                            
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Palestine</a>
+                                            </div>
+
+                                            
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Qatar</a>
+                                            </div>
+
+                                            
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Sudan</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Syria</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Tunisia</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">United Arab Emirates</a>
+                                            </div>
+
+                                            <div class="iaph-country">
+                                                <a href="javascript:void(null)">Yemen</a>
+                                            </div>
+
+                                    </div>
+                    
+                                </div> <!--End iaph-mega-menu-menu-container-->
+                            
+                    
+                        </li> <!--End iaph-mega-menu-->
+
+
+                        <li class="iaph-drop-down">
+
+                            <a   class="iaph-drop-down-button"> Topics in Focus <i class="fas fa-arrow-down"></i> </a>
+                    
+                             <ul class='iaph-drop-down-menu-container'>
+                    
+                                    <ul class="iaph-drop-down-menu">
+                                        <li><a href="javascript:void(null)">All</a></li>
+                                        <li><a href="javascript:void(null)">Collaborations and innovations</a></li>
+                                        <li><a href="javascript:void(null)">Communicable Diseases</a></li>
+                                        <li><a href="javascript:void(null)">Covid-19</a></li>
+                                        <li><a href="javascript:void(null)">Emergency Response</a></li>
+                                        <li><a href="javascript:void(null)">Emerging and Re-emerging Infections </a></li>
+                                        <li><a href="javascript:void(null)">Environmental Health</a></li>
+                                        <li><a href="javascript:void(null)">Health Technology/Technology and Innovative Solutions</a></li>
+                                        <li><a href="javascript:void(null)">Mass Gatherings</a></li>
+                                        <li><a href="javascript:void(null)">Maternal and Child Health</a></li>
+                                        <li><a href="javascript:void(null)">Operational Research</a></li>
+                                        <li><a href="javascript:void(null)">Outbreak Investigations  </a></li>
+                                    </ul> <!--End iaph-drop-down-menu-->
+                    
+                            </ul> <!--End iaph-drop-down-menu-container-->
+                    
+                        </li> <!--End iaph-drop-down-->
+
+
+
+                        <li><a href="javascript:void(null)"> The Globe</a></li>
+
+
+                        <li>
+
+                            <div class="iaph-nav-bar-search-outer-container iaph-display-none-tablet">
+                                <input type="text" class="" placeholder="Search" />
+                                <button class="iaph-button iaph-button-primary iaph-button-square">Search</button>
+                            </div>
+
+                        </li>
+                        <!--Desktop and Mobile -->
+
+                    </ul><!--End iaph-nav-bar-information-links-->
+                    
+                    <div class="iaph-nav-bar-search-container" >
+                        <img class="iaph-nav-bar-search" src="../../version-1/images/icon-search.svg"/> <!--End iaph-nav-bar-search-->
+                    </div> <!-- End iaph-nav-bar-search-container-->
+
+                    <div class="iaph-nav-bar-hamburger-icon">
+                        <span class="iaph-nav-bar-hamburger-icon-line-1"></span>
+                        <span class="iaph-nav-bar-hamburger-icon-line-2"></span>
+                        <span class="iaph-nav-bar-hamburger-icon-line-3"></span>
+                    </div>
+                    
+                </div><!--End iaph-nav-bar-information-->
+                
+
+                <div class="iaph-nav-bar-form-container ">
+
+                    <div class="iaph-nav-bar-form">
+                        <input type="text" class="iaph-nav-bar-form-input" placeholder="Search For Every Thing" />
+                        <button class="iaph-nav-bar-form-button">Search</button>
+                    </div> <!--End iaph-nav-bar-form-->
+
+                </div><!--End iaph-nav-bar-form-container-->
+
+
+        </div><!--iaph-container-->
+
+    </nav><!--End iaph-nav-bar-->
+
+
+</section>
+<!-- End iaph Nav bar-->
+
+
+
+<!-- Start iaph Bread Crumb-->
+<section class="iaph-bread-crumb-section">
+    <div class="iaph-container">
+            <nav class="iaph-bread-crumb-container">
+        
+                <ul class="iaph-bread-crumb-items">
+        
+                    <li class="iaph-bread-crumb-link-item">
+                        <a class="iaph-bread-crumb-link" href="javascript:void(null)"> Home </a>
+                    </li><!--End iaph-bread-crumb-link-item-->
+
+
+                    <li class="iaph-bread-crumb-link-item">
+                        <a class="iaph-bread-crumb-link" href="javascript:void(null)"> Eastern Mediterranean </a>
+                    </li><!--End iaph-bread-crumb-link-item-->
+
+                    <li class="iaph-bread-crumb-link-item">
+                        <a class="iaph-bread-crumb-link" href="javascript:void(null)"> Kuwait </a>
+                    </li><!--End iaph-bread-crumb-link-item-->
+        
+                    <li class="iaph-bread-crumb-link-item">
+                        <a class="iaph-bread-crumb-link iaph-bread-crumb-link-active" href="javascript:void(null)"> Optional 4th COVID-19 dose coming soon in Kuwait </a>
+                    </li><!--End iaph-bread-crumb-link-item-->
+
+                </ul><!--End iaph-bread-crumb-items-->
+        
+            </nav><!--End iaph-bread-crumb-container-->
+    </div><!--End iaph-container-->
+</section>
+<!--End iaph-bread-crumb-section-->
+
+
+<!-- Start iaph Single Post-->
+<section class="iaph-single-post-section">
+        <div class="iaph-container iaph-padding-top-30 iaph-padding-bottom-30">
+            <div class="iaph-adjustment">
+                <div class="iaph-layout-75-25">
+                        <div class="iaph-layout-75">
+                                <!-- Start iaph Paragraph-->
+                                        <section class="iaph-paragraph">
+                                            <div class="iaph-no-class">
+                                                
+                                                <div class="iaph-paragraph-container">
+                                                
+                                                    <!--Start funtion Container -->
+                                                    <div class="iaph-paragraph-funtions iaph-margin-bottom-10">
+                                            
+
+                                            
+                                                        <div class="iaph-paragraph-function-full-screen iaph-display-none-tablet">
+                                                            <div class="fullScreen">Full Screen</div>
+                                                        </div><!--End iaph-paragraph-function-full-screen-->
+                                            
+                                            
+                                                        <div class="iaph-paragraph-funtion-font-size">
+                                                            <div class="iaph-paragraph-funtion-font-size-decrease font">A -</div>
+                                                            <div class="iaph-paragraph-funtion-font-size-increase font">A + </div>
+                                                        </div><!--End iaph-paragraph-funtion-font-size-->
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                    </div><!--End iaph-paragraph-funtions-->
+                                                    <!--End funtion Container -->
+                                            
+                                                    <div class="iaph-paragraph-information-container" >
+                                            
+                                                        <h2 class="iaph-paragraph-information-title">Optional 4th COVID-19 dose coming soon in Kuwait</h2>
+                                                        <div class="iaph-paragraph-information-line"></div>
+                                                        
+                                                        <div class="iaph-paragraph-information-category-cotnainer">
+                                                            <div class="iaph-paragraph-information-category-title iaph-color-second">Zaywa</div>
+                                                            <div class="iaph-paragraph-information-category-date iaph-color-main">Jun 26, 2022 - 09:19</div>
+                                                        </div>
+
+                                                        <div class="iaph-no-class">
+                                                            <img class="iaph-paragraph-image iaph-margin-top-10" src="https://epinews.emphnet.net/uploads/images/2022/06/image_750x_62b7fa28ee6fb.jpg"/>
+                                                        </div>
+
+                                                        <p  class="iaph-paragraph-information-description">
+                                                            The Ministry of Health is all set to make an official statement on the availability of the fourth dose of COVID vaccine. The fourth dose will be in accordance with regulations provided to the groups most vulnerable to infection who are suffering from chronic diseases, elderly and those who have been vaccinated with third dose after a certain period of time.                                                        </p><!--End iaph-paragraph-information-description-->
+                                            
+                                                        <p class="iaph-paragraph-information-description">
+                                                            The dose will be for those who wish to be vaccinated, reports Al Rai. The booster dose is given to avoid complications when infected. It is important to follow precautionary measures and continue to adhere to health instructions.                                                        </p><!--End iaph-paragraph-information-description-->
+                                            
+                                                        <div class="iaph-paragraph-information-button-container">
+                                                                <a class="iaph-button iaph-button-secondary iaph-button-square " href="javascript:void(null)">Read More <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+                                                        </div>
+                                                        
+
+                                                        <div class="iaph-paragraph-information-tags-container iaph-margin-top-20">
+                                                                <h3 class="iaph-margin-bottom-10">Tags:</h3>
+                                                                <div class="iaph-paragraph-information-tags">
+                                                                    <a href="javascript:void(null)" class="iaph-paragraph-information-tag">Kuwait</a>
+                                                                    <a href="javascript:void(null)" class="iaph-paragraph-information-tag">Fourth dose of COVID vaccine</a>
+                                                                    <a href="javascript:void(null)" class="iaph-paragraph-information-tag">Chronic diseases</a>
+                                                                    <a href="javascript:void(null)" class="iaph-paragraph-information-tag">Precautionary measures</a>
+                                                                </div>
+                                                        </div>
+                                                        
+
+                                            
+                                            
+                                            
+                                                    </div><!--End iaph-paragraph-information-container-->
+                                                
+                                                
+                                                </div><!--End iaph-paragraph-container-->
+                                                
+                                            
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div><!--End iaph-container-->
+                                        </section><!--End iaph-paragraph-->  
+
+                                        <section class="iaph-next-prev-article iaph-margin-top-20">
+                                                <div class="iaph-container-grid-2">
+        
+
+                                                    <div class="iaph-card-container">
+
+
+
+                                                    <a href="javascript:void(null)" class="iaph-card-link">
+
+                                                        <div class="iaph-card-information-container">
+
+                                                            <div class="iaph-card-information-sub-title iaph-color-main">
+                                                                Previous Article
+                                                            </div><!--End iaph-card-information-sub-title-->
+                                                    
+                                                            <div class="iaph-card-information-title ">
+                                                                Benbouzid chairs 57th Arab Health Ministers Council meeting in Geneva
+                                                            </div><!--End iaph-card-information-title-->
+                                                    
+                                                    
+                                                        </div><!--End iaph-card-information-container-->
+
+                                                    
+                                                    <div class="iaph-card-image-container">
+                                                        <img class="iaph-card-image" src="https://epinews.emphnet.net/uploads/images/2022/06/image_380x226_62b8130687166.jpg" alt="iaph" title="iaph">
+                                                        <div>
+                                                            <div class="iaph-card-image-category iaph-margin-bottom-30">Algeria Press</div>
+                                                            <div class="iaph-card-image-date">Jun 26, 2022</div>
+                                                        </div>
+                                                    </div><!--End iaph-card-image-container-->
+                                                    
+
+                                                    </a><!--End iaph-card-link-->
+                                                    </div><!--End iaph-card-container-->
+                                                    
+                                                    
+                                                    <div class="iaph-card-container">
+                                                    <a href="javascript:void(null)" class="iaph-card-link">
+
+                                                        <div class="iaph-card-information-container">
+
+                                                            <div class="iaph-card-information-sub-title iaph-color-main">
+                                                                Next  Article
+                                                            </div><!--End iaph-card-information-sub-title-->
+                                                    
+                                                            <div class="iaph-card-information-title">
+                                                                Optional 4th COVID-19 dose coming soon in Kuwait
+                                                            </div><!--End iaph-card-information-title-->
+                                                    
+                                                    
+                                                        </div><!--End iaph-card-information-container-->
+
+                                                    
+                                                        <div class="iaph-card-image-container">
+                                                            <img class="iaph-card-image" src="https://epinews.emphnet.net/uploads/images/2022/06/image_380x226_62b821368c274.jpg" alt="iaph" title="iaph">
+                                                            <div>
+                                                                <div class="iaph-card-image-category iaph-margin-bottom-30">Zaywa</div>
+                                                                <div class="iaph-card-image-date">Jun 26, 2022</div>
+                                                            </div>
+                                                        </div><!--End iaph-card-image-container-->
+                                                    
+
+                                                    </a>
+                                                    </div><!--End iaph-card-container-->
+                                                </div>
+                                        </section>
+                                <!-- End iaph Paragraph-->
+                        </div>
+
+                        <div class="iaph-layout-25 iaph-layout-sticky">
+                                <div class="iaph-side-bar-single-news ">
+                                        <div class="iaph-side-bar-single-news-share-post-container iaph-margin-bottom-20">
+                                                <h2 class="iaph-color-main">Share</h2>
+
+                                                <div class="iaph-side-bar-single-news-share-news-social-container">
+                                                        <a href="https://iaph.org" class="iaph-copy-link">
+                                                            <i class="fa fa-clone" aria-hidden="true"></i>
+                                                        </a>
+
+                                                        <a href="https://iaph.org" class="iaph-facebook">
+                                                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                                                        </a>
+
+                                                        <a href="https://iaph.org" class="iaph-twitter">
+                                                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                                                        </a>
+
+                                                        <a href="https://iaph.org" class="iaph-linkedin">
+                                                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                                        </a>
+
+                                                        <a href="https://iaph.org" class="iaph-whatsapp">
+                                                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                        </a>
+
+                                                        <a href="https://iaph.org" class="iaph-telegram">
+                                                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                                                        </a>
+                                                </div>
+                                        </div>
+
+                                        <div class="iaph-side-bar-single-news-related-post-container">
+                                            <h2 class="iaph-color-main">Related Articles</h2>
+
+                                            <div class="iaph-side-bar-single-news-related-post-single-post-container">
+                                                <a href="https://iaph.org" class="iaph-side-bar-single-news-related-post-single-post-title">Patient Safety Friendly Primary Care initiative</a>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-category">Oman News Center</div>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-date-container">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    <span>Jun 20, 2022</span>
+                                                </div>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-line"></div>
+                                            </div>
+
+
+                                            <div class="iaph-side-bar-single-news-related-post-single-post-container">
+                                                <a href="https://iaph.org" class="iaph-side-bar-single-news-related-post-single-post-title">Jordan's primary healthcare system evaluation study launched</a>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-category">Ammon</div>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-date-container">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    <span>Jun 21, 2022</span>
+                                                </div>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-line"></div>
+                                            </div>
+
+
+                                            <div class="iaph-side-bar-single-news-related-post-single-post-container">
+                                                <a href="https://iaph.org" class="iaph-side-bar-single-news-related-post-single-post-title">MSF is responding to unprecedented surge of measles cases</a>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-category">Doctors without Borders</div>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-date-container">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    <span>May 21, 2022</span>
+                                                </div>
+                                                <div class="iaph-side-bar-single-news-related-post-single-post-line"></div>
+                                            </div>
+
+
+                                        </div>
+
+                                </div>  
+                        </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- End iaph Single Post-->
+
+<!--Start Footer-->
+<section class="iaph-footer-section">
+    
+    <div class="iaph-footer-middle">
+    <div class="iaph-container">
+        
+        <div class="iaph-footer-middle-container">
+        
+                    <div class="iaph-footer-image-container">
+                        <img class="iaph-footer-image" src="https://epinews.emphnet.net/assets/img/Logo-Footer.png" width="100" />
+                        <p class="iaph-footer-image-title">Powered by GHD|EMPHNET</p>
+                    </div><!--End iaph-footer-image-container-->
+        
+    
+    
+                    <div class="iaph-footer-links-container">
+                        <h5 class="iaph-footer-title">Initiative</h5>
+                        <ul class="iaph-footer-links">
+                            <li class="iaph-footer-links-link"><a href="javascript:void(null)">About Us</a></li>
+                            <li class="iaph-footer-links-link"><a href="javascript:void(null)">Terms & Conditions</a></li>
+                            <li class="iaph-footer-links-link"><a href="javascript:void(null)">Privacy Policy</a></li>
+                            <li class="iaph-footer-links-link"><a href="javascript:void(null)">Contact Us</a></li>
+                        </ul>
+                    </div><!--End iaph-footer-middle-links-container-->
+
+
+
+                    <div class="iaph-footer-links-container">
+                        <h5 class="iaph-footer-title">Useful Links</h5>
+                        <ul class="iaph-footer-links">
+                            <li class="iaph-footer-links-link"><a href="javascript:void(null)">Useful Links</a></li>
+                            <li class="iaph-footer-links-link"><a href="javascript:void(null)">COVID-19 Dashboard </a></li>
+                        </ul>
+                    </div><!--End iaph-footer-middle-links-container-->
+        
+        
+                    <div class="iaph-footer-container">
+                        <h5 class="iaph-footer-title">Follow Us</h5>
+                        
+                        <div class="iaph-footer-contact-us-item">
+                            <a href="javascript:void(null)"><span class="iaph-footer-icon"><i class="fab fa-facebook-square"></i></span></a>
+                            <a href="javascript:void(null)"><span class="iaph-footer-icon"><i class="fab fa-twitter-square"></i></span></a>
+                            <a href="javascript:void(null)"><span class="iaph-footer-icon"><i class="fab fa-instagram-square"></i></span></a>
+                            <a href="javascript:void(null)"><span class="iaph-footer-icon"><i class="fab fa-linkedin"></i></span></a>
+                        </div><!--End iaph-footer-contact-us-item-->
+    
+                    </div><!--iaph-footer-container-->
+                    
+        
+        </div><!--End iaph-footer-middle-container-->
+        
+    </div><!--End iaph-container-->
+    </div><!--End iaph-footer-middle-->
+        
+    <div class="iaph-footer-bottom">
+        <div class="iaph-footer-bottom-container">© 2022 epinews. All Rights Reserved.</div>
+    </div><!--End iaph-footer-bottom-->
+        
+        
+</section><!--End iaph-footer-section-->
+<!--End Footer-->
+
+
+<script src="../../version-1/js/jquery-3.5.1.min.js"></script>
+<script src="../../version-1/js/owl.carousel.min.js"></script>
+<script src="../../version-1/js/iaph-nav-bar.js"></script>
+<script src="../../version-1/js/iaph-mega-menu.js"></script>
+<script src="../../version-1/js/iaph-paragraph.js"></script>
+
+<script>
+
+    iaph_change_font_initiate_font(".iaph-paragraph-information-container","24px");
+    
+    let increase = document.querySelector(".iaph-paragraph-funtion-font-size-increase"); 
+
+    increase.addEventListener("click", function() { 
+        iaph_change_font_max('.iaph-paragraph-information-container','27px',3) 
+    });
+
+    let decrease = document.querySelector(".iaph-paragraph-funtion-font-size-decrease"); 
+
+    decrease.addEventListener("click", function() { 
+        iaph_change_font_min(".iaph-paragraph-information-container","21px",3) 
+    });
+
+
+
+    iaph_full_screen(".fullScreen",".iaph-paragraph-container","custom");
+
+    iaph_dark_mode(".darkMode",".iaph-paragraph-container");
+    
+</script>
+<!--Epinews Design-->
+</body>
+</html>

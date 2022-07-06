@@ -1,0 +1,46 @@
+.iaph-most-popular-cards .owl-next, .iaph-the-globe .owl-next, .iaph-eastern-mediterranean .owl-next, .iaph-topics-in-focus .owl-next{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    right: -40px;
+    display: block !important;
+    background: var(--iaph-color-metal-grey)  !important;
+    color: var(--iaph-color-white) !important;
+}
+
+
+.iaph-most-popular-cards .owl-prev, .iaph-the-globe .owl-prev, .iaph-eastern-mediterranean .owl-prev, .iaph-topics-in-focus .owl-prev{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    left: -40px;
+    display: block !important;
+    background: var(--iaph-color-metal-grey) !important;
+    color: var(--iaph-color-white) !important;
+}
+
+
+@media (max-width: 1227px) {
+
+    .owl-nav{
+        display: flex;
+    }
+
+    .iaph-most-popular-cards .owl-next, .iaph-the-globe .owl-next, .iaph-eastern-mediterranean .owl-next, .iaph-topics-in-focus .owl-next{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top:0;
+    }
+
+    .iaph-most-popular-cards .owl-prev, .iaph-the-globe .owl-prev, .iaph-eastern-mediterranean .owl-prev, .iaph-topics-in-focus .owl-prev{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top:0;
+    }
+}

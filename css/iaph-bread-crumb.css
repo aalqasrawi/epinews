@@ -1,0 +1,54 @@
+.iaph-bread-crumb-section{
+background-color: #f6f7f9;
+margin-top: 15px;
+    }
+
+
+
+
+            @media (max-width: 992px) {
+
+
+                .iaph-bread-crumb-section{
+                    padding-left: 10px;
+                        }
+             }
+
+.iaph-bread-crumb-container{
+    font-size: 13px;
+}
+
+.iaph-bread-crumb-items{
+padding: 12px 0;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
+
+.iaph-bread-crumb-link-item:not(:last-of-type)::after{
+content:'\203a';
+margin:0 10px;
+color:#2d2d2d;
+    }
+
+.iaph-bread-crumb-link{
+text-decoration: none;
+color:#2d2d2d;
+-webkit-transition: .4s;
+-o-transition: .4s;
+transition: .4s;
+    }
+    
+.iaph-bread-crumb-link:hover {
+-webkit-box-shadow: 0 1px 0 #7f7f7f;
+        box-shadow: 0 1px 0 #7f7f7f;
+    }
+
+.iaph-bread-crumb-link.iaph-bread-crumb-link-active{
+color: #004bb4;
+font-weight: 600;
+-webkit-box-shadow: 0 1px 0 #7f7f7f;
+        box-shadow: 0 1px 0 #7f7f7f;
+    }

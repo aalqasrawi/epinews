@@ -1,0 +1,106 @@
+.iaph-3 .iaph-card-container {
+border: 3px solid #f6f7f9;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+position: relative;
+background-color: #ffffff;
+    }
+    
+
+
+.iaph-3 .iaph-card-image-container {
+position: relative;
+    }
+
+.iaph-3 .iaph-card-image {
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+    }
+
+.iaph-3 .iaph-card-image-overlay{
+position: absolute;
+bottom: 0;
+top: 0;
+right: 0;
+left: 0;
+left: 0;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+-webkit-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+
+.iaph-3 .iaph-card-container:hover .iaph-card-image-overlay {
+    background: #be363647;
+}
+
+
+.iaph-3 .iaph-card-image-box{
+position: absolute;
+right: 30px;
+top: auto;
+bottom: -25px;
+z-index: 1;
+    }
+
+.iaph-3 .iaph-card-image-box span{
+background: #ffffff;
+display: inline-block;
+font-weight: bold;
+padding: 12px 10px 12px;
+color: var(--iaph-color-energy-red);
+border-radius: 4px;
+font-size: 14px;
+-webkit-box-shadow: 0 30px 30px rgb(0 0 0 / 7%);
+        box-shadow: 0 30px 30px rgb(0 0 0 / 7%);
+    }
+
+.iaph-3 .iaph-card-information-container {
+padding: 40px 10px 0;
+position:relative;
+background: #ffffff;
+    }
+
+.iaph-3 .iaph-card-information-title {
+min-height: 90px;
+font-size: 17px;
+    }
+
+.iaph-3 .iaph-card-information-date {
+    color: #4F5964;
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+
+.iaph-eastern-mediterranean-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}  
+
+.iaph-eastern-mediterranean-link{
+    font-size:24px;
+    font-weight:bold;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.iaph-eastern-mediterranean-line{
+    border-radius: 5px;
+    background:var(--iaph-color-energy-red);
+    height: 4px;
+    margin: 0.7rem 0 0.938rem;
+}     
+
+.iaph-eastern-mediterranean-container .iaph-button-hover{
+    font-size: 20px;
+}

@@ -1,0 +1,42 @@
+
+
+.iaph-pagination{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        }
+    
+    .iaph-pagination-item-link{
+    padding: 8px 12px;
+    border: 1px solid #1d18180d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: rgb(0 0 0 / 10%) 0 0 40px;
+            box-shadow: rgb(0 0 0 / 10%) 0 0 40px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+        }
+    
+    .iaph-pagination-item-link:hover{
+    background: #e0dfdf;
+        }
+    
+    .iaph-pagination-item-link.active{
+    background: #8c8b8b96;
+        }
+    
+    .iaph-pagination-item-link.disabled{
+    pointer-events: none;
+    color: #b8b8b8;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    }
+
+    
