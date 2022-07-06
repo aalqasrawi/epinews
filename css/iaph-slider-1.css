@@ -127,6 +127,12 @@
     .iaph-slider-1 .iaph-adjustment{
         padding: 0!important;
     }
+    
+    
+    .iaph-slider-1  .iaph-1 .iaph-container-grid-2{
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+    }
 
 
 }
