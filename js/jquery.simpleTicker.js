@@ -113,7 +113,7 @@
     plugin.effect.roll = function() {
       param.effect = {
         'init' : {
-          'css' : {top:'0',display:'block',opacity:'1'},
+          'css' : {top:'1px',display:'block',opacity:'1'},
           'animate' : {top:'0',opacity:'1',zIndex:'98'}
         },
         'start' : {
